@@ -1,1 +1,3 @@
-# CoreJava Comparable and Comparator
+# CoreJava Programs:
+1.PrimeNumbers Programs
+2.
