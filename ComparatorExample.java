@@ -1,5 +1,5 @@
 package com.naidu.conversions;
 
-public class Employee {
+public class ComparatorExample {
 
 }
