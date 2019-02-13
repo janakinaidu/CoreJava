@@ -1,0 +1,96 @@
+#Ploymorphism:
+--------------
+Opps Principles:
+================
+
+
+Ploymorphism:Polymorphism is the ability of an object to take on many forms.
+-------------
+-->The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+Important Note :
+================
+Method overloading:
+-------------------
+
+***i)If two methods have same signature and different return types, then those methods will not be treated as two different methods or methods overloaded. For duplication, compiler checks only method signature not return types. If method signature is same, straight away it gives duplicate method error.
+
+ii)Overloaded methods may have same access modifiers or different access modifiers. It also does not effect method overloading.
+
+iii)Overloaded methods may be static or non-static. This also does not effect method overloading.
+
+Note:From the above examples, it is clear that compiler will check only method signature for method overloading or for duplicate methods. It does not check return types, access modifiers and static or non-static.
+
+Date:13/02/2019:
+===============
+Let’s discuss rules to be followed while overriding a method.
+
+i)   Name of the overrided method must be same as in the super class. You can’t change name of the method in subclass.
+
+ii)  Return Type Of Overrided Method :
+
+The return type of the overrided method must be compatible with super class method. If super class method has primitive data type as its return type, then overrided method must have same return type in sub class also. If super class method has derived or user defined data type as its return type, then return type of sub class method must be of same type or its sub class. For example,
+
+Visibility Of Overrided method :
+===============================
+
+You can keep same visibility or increase the visibility of overrided method but you can’t reduce the visibility of overrided methods in the subclass.
+Note : Visibility goes on decreasing from public to protected to default to private members.
+
+Arguments Of Overrided Methods :
+================================
+For method to be properly overrided, You must not change arguments of method in subclass. If you change the number of arguments or types of arguments of overrided method in the subclass, then method will be overloaded not overrided.
+
+Polymorphism In Java:
+=====================
+In Greek 
+Poly=many
+morph = forms
+Polymorphism refers to any entity which takes many form.
+Polymorphism in java refers to any entity whether it is an operator or a constructor or any method which takes many forms or can be used for multiple tasks either while compiling or while running a java program;
+
+i)Static Ploymorphism  ii)Dynamic Polymorphism
+
+i)Static Ploymorphism:
+----------------------
+->Operator Overloading
+->Method Overloading
+->Constructor Overloading
+
+2) Dynamic Polymorphism
+
+Any entity which shows polymorphism during run time is called dynamic polymorphism. Method Overriding is the best example of dynamic polymorphism. It is also called dynamic binding or late binding, because type of the object used will be determined at run time only.
+
+
+Constructor Rules:
+==================
+Only public, protected and private keywords are allowed before a constructor name. If you keep any other keyword before a constructor name, it gives compile time error.
+->Recursive constructor calling is not allowed.
+    class A
+    {
+         A()
+         {
+              this();
+              // It gives compile time error
+         }
+    }
+	
+->No Cylic calling of constructors.
+    class A
+    {
+         A()
+         {
+              this(10);
+              // It gives compile time error
+         }
+         A(int i)
+         {
+              this();
+              // It gives compile time error
+         }
+    }
+Difference Between Static Binding And Dynamic Binding In Java:
+==============================================================
+Binding refers to the link between method call and method definition
+
+//source of preparation for myself:javaconceptoftheday
