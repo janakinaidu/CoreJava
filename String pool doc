@@ -1,0 +1,19 @@
+String Pool:
+===========
+String Pool is possible only because String is immutable in Java and it’s implementation of String interning concept.
+String pool is also example of Flyweight design pattern.
+String pool helps in saving a lot of space for Java Runtime although it takes more time to create the String.
+
+
+I have a doubt regarding the below line of statements.Anyone can get back to me with correct solution?
+
+Q)How many string is getting created in below statement?
+
+String str = new String("Cat");
+
+In above statement, either 1 or 2 string will be created.
+If there is already a string literal “Cat” in the pool, then only one string “str” will be created in the pool.
+If there is no string literal “Cat” in the pool, then it will be first created in the pool and then in the heap space,
+so total 2 string objects will be created.
+
+does above statement right?
