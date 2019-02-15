@@ -17,3 +17,11 @@ If there is no string literal “Cat” in the pool, then it will be first creat
 so total 2 string objects will be created.
 
 does above statement right?
+
+myAnswer:
+When we use the new operator, JVM creates the String object but don’t store it into the String Pool.
+We can use intern() method to store the String object into String pool or return the reference
+if there is already a String with equal value present in the pool.
+
+And ypurs?
+
