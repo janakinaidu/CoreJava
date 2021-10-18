@@ -11,3 +11,40 @@ Differnces:
 
 //source:
 journeldev,greekforce,javatpoint
+----------------------------------------------------------------------------------------------------------------------------------------
+                    private  int returnSomeValue() {
+                        try {
+                          int x = 0/3; //This is not ArithmeticException
+                          return 1;
+                        }catch(ArithmeticException ae) {
+                          ae.printStackTrace();
+                          return 2;
+                        }
+                        catch(Exception ex){
+                          ex.printStackTrace();
+                          return 3;
+                        }
+                      }
+                      
+                      package com.naidu;
+------------------------------------------------------
+                  public class A {
+
+                    static {
+                      System.out.println("i m from static Block");//calls 1st
+                    }
+
+                    {
+                      System.out.println("i m from instance Block");
+                    }
+
+                    public static void main(String[] args) {
+                      System.out.println("Hai I m from main method");//comes in 2nd place
+                      A a = new A();//i m from instance Block
+                    }
+
+                  }
+                  OutPut:
+                    i m from static Block
+                    Hai I m from main method
+                    i m from instance Block
