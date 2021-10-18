@@ -48,3 +48,9 @@ journeldev,greekforce,javatpoint
                     i m from static Block
                     Hai I m from main method
                     i m from instance Block
+
+
+##classnotfoundexception and noclassdeffounderror in java <br>
+                  **ClassNotFoundException** is an exception that occurs when you try to load a class at run time using Class. forName() or loadClass() 
+                                              methods and mentioned classes are not found in the classpath. <br>
+                  **NoClassDefFoundError** is an error that occurs when a particular class is present at compile time, but was missing at run time
